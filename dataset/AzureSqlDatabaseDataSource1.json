@@ -1,0 +1,14 @@
+{
+	"name": "AzureSqlDatabaseDataSource1",
+	"properties": {
+		"description": "Connection to your data source store.",
+		"linkedServiceName": {
+			"referenceName": "linkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "[dbo].[xuyetable]"
+		}
+	}
+}

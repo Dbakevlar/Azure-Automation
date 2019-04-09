@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlDatabaseExternal_ControlTable1",
+	"properties": {
+		"description": "The external control table is used to store the partition list of data source tables.",
+		"linkedServiceName": {
+			"referenceName": "linkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "String"
+			}
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
