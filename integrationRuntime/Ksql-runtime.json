@@ -1,0 +1,6 @@
+{
+	"name": "Ksql-runtime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
